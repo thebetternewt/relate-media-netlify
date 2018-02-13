@@ -1,14 +1,117 @@
 /*
   You can use import statements to include partials:
  */
-@import "imports/reset.css";
+@import "imports/normalize.css";
+@import "imports/fonts.css";
+@import "imports/owl-carousel.css";
 
 
-/*
-  Or add your statements here:
- */
-body{
-  font-family: sans-serif;
-  font-size: 1em;
-  text-align: center;
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 160px;
+}
+
+.nav {
+  background-color: #111;
+  color: #f6f7fb;
+
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 45px 15px 30px;
+  align-items: flex-end;
+
+  font-family: 'hanleysans', helvetica, arial, sans-serif;
+  text-transform: uppercase;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  & ul {
+    list-style: none;
+    padding-left: 0;
+    & li {
+      display: block;
+      font-size: 1.8em;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      margin: 0.5em 0;
+
+    }
+  }
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: 6px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  z-index: 10;
+  & .header-logo {
+    height: 80%;
+  }
+}
+
+.carousel-outer {
+  margin: 3em;
+  height: 200px;
+  width: 400px;
+  background-color: #333;
+  position: relative;
+  & .carousel {
+    font-size: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    & > div {
+      height: 190px;
+      width: 190px;
+      background-color: #999;
+      display: inline-block;
+      font-size: 16px;
+      margin: 5px;
+      text-align: center;
+      &:before {
+        /* Align content vertically without flexbox */
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+      }
+    }
+  }
+  & .arrow {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    top: calc( 50% -15px);
+    cursor: pointer;
+    &.left {
+      left: 0;
+    }
+    &.right {
+      right: 0;
+    }
+  }
 }

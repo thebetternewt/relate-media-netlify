@@ -1,0 +1,70 @@
+@import "./fonts.css";
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-carousel .item {
+    background-color: #0F1341;
+    color: #fff;
+
+    font-family: 'hanleysans';
+    font-size: 2.6em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    height: 600px;
+    padding: 50px;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 40%;
+
+    width: 100%;
+}
+
+.owl-prev, .owl-next {
+    background-color: #333;
+    color: #fff;
+    
+    padding: 20px;
+}
+
+.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: space-around;
+
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    margin: 0 auto;
+}
+.owl-dot {
+    background-color: gray;
+    border-radius: 99px;
+    border: 3px solid #FFF;
+
+    height: 20px;
+    width: 20px;
+    &.active {
+        background-color: aqua;
+        border-color: #fff;
+    }
+}

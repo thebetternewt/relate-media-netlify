@@ -1,4 +1,25 @@
-  <script src="app.js"></script>
+<script src="app.js"></script>
 
-  </body>
-</html>
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            margin:0,
+            nav:true,
+            navText: ['<i class="fa fa-angle-double-left fa-2x" aria-hidden="true"></i>',
+                        '<i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i>'],
+            items: 1,
+            animateIn: 'fadeInRight',
+            animateOut: 'fadeOutLeft',
+            autoplay: true,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: true
+        });
+    });
+</script>

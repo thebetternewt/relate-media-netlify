@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'hanleysans';
+    src: url('/fonts/d62_hanley-sans-webfont.woff2') format('woff2'),
+         url('/fonts/d62_hanley-sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
