@@ -16,7 +16,7 @@
   </div>
 </div>
 
-<div class="services-section">
+<section class="section services-section">
     <ul class="service-nav">
         <li><a>Branding</a></li>
         <li><a>Web Presence</a></li>
@@ -26,7 +26,8 @@
     <div class="row">
         <div class="panel">
             <div class="icon-container">
-                <i class="far fa-hand-rock fa-3x"></i>
+                <i class="fal fa-hand-rock fa-2x" data-fa-transform="rotate-45 down-8 right-3"></i>
+                <i class="fal fa-hand-rock fa-2x" data-fa-transform="rotate-225 left-3"></i>
             </div>
             <h3>Fist Bump</h3>
             <ul>
@@ -38,7 +39,7 @@
         </div>
         <div class="panel">
             <div class="icon-container">
-                <i class="far fa-hand-rock fa-3x"></i>
+                <i class="fal fa-users fa-3x"></i>
             </div>
             <h3>Hangout</h3>
             <ul>
@@ -50,7 +51,7 @@
         </div>
         <div class="panel">
             <div class="icon-container">
-                <i class="far fa-hand-rock fa-3x"></i>
+                <i class="fal fa-bullhorn fa-3x"></i>
             </div>
             <h3>Block Party</h3>
             <ul>
@@ -61,7 +62,70 @@
             </ul>
         </div>
     </div>
-</div>
+</section>
+
+<section class="section team-section">
+    <div class="row">
+        <div class="bio">
+            <img src="http://via.placeholder.com/300x300" alt="">
+            <h3 class="name">Sarah Pearson</h3>
+            <h4 class="job">Founder/Photographer/Graphic Designer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, eveniet.</p>
+        </div>
+        <div class="bio">
+            <img src="http://via.placeholder.com/300x300" alt="">
+            <h3 class="name">Chris Eady</h3>
+            <h4 class="job">Web Designer/Developer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, eveniet.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section contact-section">
+    <h3>Contact Us</h3>
+    <div class="row">
+        <div class="col">
+            <div class="icon-container">
+                <i class="fal fa-phone-volume fa-2x"></i>
+            </div>
+        </div>
+        <div class="col">
+                <form role="form" id="contact-form" method="post">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group label-floating">
+                                    <label class="control-label">First name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group label-floating">
+                                    <label class="control-label">Last name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group label-floating">
+                            <label class="control-label">Email address</label>
+                            <input type="email" name="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group label-floating">
+                            <label class="control-label">Your message</label>
+                            <textarea name="message" class="form-control" id="message" rows="6" placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button type="submit" class="btn btn-primary pull-right">Send Message
+                                </button></div>
+                            </div>
+                        </div>
+                    </form>
+        </div>
+        
+    </div>
+</section>
 
 {{ partial "footer" . }}
 </body>
