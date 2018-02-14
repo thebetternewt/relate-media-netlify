@@ -1,11 +1,14 @@
 @import "./fonts.css";
+@import "./colors.css";
 
 .owl-carousel {
     position: relative;
 }
 
 .owl-carousel .item {
-    background-color: #0F1341;
+    background-color: var(--primary-bg-color);
+    background-size: cover;
+    background-position: center left;
     color: #fff;
 
     font-family: 'hanleysans';
@@ -17,13 +20,21 @@
     text-align: center;
 
     height: 600px;
-    padding: 50px;
+    padding: 5rem;
+    &.item-1 {
+        background-image: url('/images/computer-google.jpeg');
+    }
+    &.item-2 {
+        background-image: url('/images/coffee-cup.jpeg');
+    }
+    &.item-3 {
+        background-image: url('/images/camera.jpg');
+    }
 }
 
 .owl-nav {
     position: absolute;
     top: 40%;
-
     width: 100%;
 }
 
@@ -64,7 +75,7 @@
     height: 20px;
     width: 20px;
     &.active {
-        background-color: aqua;
+        background-color: #fdb833;
         border-color: #fff;
     }
 }

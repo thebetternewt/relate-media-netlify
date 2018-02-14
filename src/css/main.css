@@ -2,6 +2,7 @@
   You can use import statements to include partials:
  */
 @import "imports/normalize.css";
+@import "imports/colors.css";
 @import "imports/fonts.css";
 @import "imports/owl-carousel.css";
 
@@ -16,8 +17,16 @@
 }
 
 body {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
   margin: 0;
   padding-top: 160px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
 }
 
 .nav {
@@ -68,50 +77,94 @@ body {
   }
 }
 
-.carousel-outer {
-  margin: 3em;
-  height: 200px;
-  width: 400px;
-  background-color: #333;
-  position: relative;
-  & .carousel {
-    font-size: 0px;
-    white-space: nowrap;
-    overflow: hidden;
-    & > div {
-      height: 190px;
-      width: 190px;
-      background-color: #999;
-      display: inline-block;
-      font-size: 16px;
-      margin: 5px;
-      text-align: center;
-      &:before {
-        /* Align content vertically without flexbox */
-        content: '';
-        display: inline-block;
-        vertical-align: middle;
-        height: 100%;
-      }
-    }
-  }
-  & .arrow {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    height: 30px;
-    width: 30px;
+.services-section {
+  background-color: #071e82;
+  padding: 4rem 0;
+}
+
+.service-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 0;
+  & li {
+    /* border: 1px solid #fff; */
     display: inline-block;
-    line-height: 30px;
-    position: absolute;
-    top: 50%;
-    top: calc( 50% -15px);
-    cursor: pointer;
-    &.left {
-      left: 0;
+    margin: 0;
+    padding: 0;
+    &:first-of-type a {
+        border-radius: 30px 0 0 30px;
     }
-    &.right {
-      right: 0;
+    &:last-of-type a {
+        border-radius: 0 30px 30px 0;
+    }
+    & a {
+      background-color: #071e82;
+      border: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: 'hanleysans', Helvetica, Arial, sans-serif;
+      /* margin: -10px; */
+      padding: 1em 2em;
+      width: 250px;
     }
   }
+}
+
+.panel {
+  background-color: #F7F9F9;
+  border: 5px solid var(--primary-bg-color);
+  color: var(--primary-bg-color);
+  border-radius: 10px;
+  flex-basis: 30%;
+  margin: 0 20px;
+  max-width: 300px;
+  padding:  1.4rem;
+  text-align: center;
+  & .icon-container {
+    background-color: var(--primary-bg-color);
+    border-radius: 99px;
+    box-sizing: border-box;
+    color: #F7F9F9;
+    height: 90px;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 90px;
+    & i {
+      margin: 0.3em 0;
+    }
+  }
+  & h3 {
+    font-size: 1.5em;
+    font-weight: 600px;
+    margin-top: 0.7em;
+    text-transform: uppercase;
+  }
+  & ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  & li {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 90%;
+    &:not(:last-of-type):after {
+      background-color: var(--primary-bg-color);
+      border-radius: 10px;
+      content: '';
+      display: block;
+      height: 1px;
+      margin: 0.7em auto 0.5em;
+      width: 50%;
+    }
+  }
+}
+
+.footer {
+  background-color: #111;
+  height: 100px;
 }
