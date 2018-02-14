@@ -6,4 +6,4 @@
   command = "npm run build-preview"
 
 [context.production.environment]
-    YARN_FLAGS = "--no-ignore-optional"
+  YARN_FLAGS = "--no-ignore-optional"
