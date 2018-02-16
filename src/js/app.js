@@ -10,6 +10,9 @@ $(function() {
     $(".service-header").hide();
     $(".service-info").hide();
 
+    $(".service-nav-btn").removeClass("active");
+    $(this).addClass("active");
+
     animate("#brand-header, #brand-info", "fadeIn");
     $("#brand-header").show();
     $("#brand-info").show();
@@ -21,6 +24,9 @@ $(function() {
     $(".service-header").hide();
     $(".service-info").hide();
 
+    $(".service-nav-btn").removeClass("active");
+    $(this).addClass("active");
+
     animate("#web-header, #web-info", "fadeIn");
     $("#web-header").show();
     $("#web-info").show();
@@ -31,6 +37,9 @@ $(function() {
     console.log("photo button clicked!");
     $(".service-header").hide();
     $(".service-info").hide();
+
+    $(".service-nav-btn").removeClass("active");
+    $(this).addClass("active");
 
     animate("#photo-header, #photo-info", "fadeIn");
     $("#photo-header").show();

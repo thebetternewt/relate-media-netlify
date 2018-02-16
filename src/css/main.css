@@ -95,6 +95,12 @@ body {
   height: 300px;
   position: absolute;
   width: 100%;
+  & .container {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
   & img {
     height: 200vw;
     position: absolute;
@@ -104,16 +110,17 @@ body {
     z-index: -1;
   }
   & h1 {
-    color: #f6f7fb;
+    color: #fff;
     display: block;
     font-family: "Futura", helvetica, arial, sans-serif;
     font-size: 10vw;
-    margin-top: 3rem;
+    margin: 0;
     position: absolute;
-    bottom: 20px;
-    left: 1rem;
+    bottom: 10px;
+    left: 2rem;
     text-transform: uppercase;
 
+    transform-origin: bottom left;
     transform: rotate(-11.5deg);
   }
 }
@@ -143,7 +150,7 @@ body {
     cursor: pointer;
     &.active {
       background-color: #f6f7fb;
-      color: #0F1341;
+      color: #0f1341;
     }
   }
 }
@@ -186,7 +193,6 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-
   }
   & .bio {
     display: flex;
@@ -218,9 +224,8 @@ body {
   .slanted {
     height: 400px;
     & h1 {
-      font-size: 6vw;
-      margin-top: 0.7em;
-      left: 5rem;
+      bottom: 0.5rem;
+      font-size: 7vw;
     }
   }
   .team-section .row {
@@ -231,9 +236,10 @@ body {
 @media (min-width: 1600px) {
   .slanted {
     height: 500px;
-  }
-  .slanted h1 {
-    font-size: 6em;
-    margin-top: 0.7em;
+    & h1 {
+      font-size: 6em;
+      bottom: 6rem;
+      left: 2rem;
+    }
   }
 }
